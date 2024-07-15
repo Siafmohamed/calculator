@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <table id="calc">
+            <tr>
+                <div class="no">
+                <td colspan="4"><input type="text" id="result"></td>
+                
+                <td ><input type="button" class="btn" value="c" onclick="clr()" /></td>
+            </div>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="1" onclick="dis('1')"></td>
+                <td><input type="button" class="btn" value="2" onclick="dis('2')"></td>
+                <td><input type="button" class="btn" value="3" onclick="dis('3')"></td>
+                <td><input type="button" class="btn" value="/" onclick="dis('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="4" onclick="dis('4')"></td>
+                <td><input type="button" class="btn" value="5" onclick="dis('5')"></td>
+                <td><input type="button" class="btn"value="6" onclick="dis('6')"></td>
+                <td><input type="button" class="btn" value="*" onclick="dis('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn"value="7" onclick="dis('7')"></td>
+                <td><input type="button" class="btn" value="8" onclick="dis('8')"></td>
+                <td><input type="button" class="btn" value="9" onclick="dis('9')"></td>
+                <td><input type="button" class="btn" value="-" onclick="dis('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="0" onclick="dis('0')"></td>
+                <td><input type="button" class="btn" value="." onclick="dis('.')"></td>
+                <td><input type="button" class="btn" value="=" onclick="solve()"></td>
+                <td><input type="button" class="btn" value="+" onclick="dis('+')"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+            integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script src="file.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+#calc {
+    border: 1px solid black;
+    margin: 0 auto; /* This centers the table horizontally */
+}
+
+
+#calc input[type="text"] {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    position : relative;
+}
+
+#calc input[type="button"] {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+   
+}
+.no {
+    position: relative;
+}
+.no button {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transform: translatex(-100px);
+    position: absolute;
+}
+.btn {
+    background-color: #ffcccc; /* Customize clear button color */
+    color: red;
+}
